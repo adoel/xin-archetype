@@ -15,13 +15,13 @@
 
     <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/xin-theme/style/style.css" />
 
     <!--    ##Start Development Stylesheet##
     <link rel="stylesheet" type="text/css" href="vendor/xin/css/xin.min.css" />
     <link rel="stylesheet" type="text/css" href="vendor/xin/css/xin-contrib.min.css" />
     <link rel="stylesheet" type="text/css" href="vendor/jacket-awesome/jacket-awesome.css" />
     <link rel="stylesheet" type="text/css" href="vendor/naked/css/naked.css" />
-    <link rel="stylesheet" type="text/css" href="vendor/xin-theme/style/style.css" />
             ##End Development Stylesheet## -->
 
 </head>
@@ -102,9 +102,6 @@
                   <div class="span-2">
                      <a href="#" class="icon-menu pull-right"><i class="xn xn-check"></i></a>
                   </div>
-                  <div class="span-2">
-                     <a href="#" class="icon-menu pull-right"><i class="xn xn-check"></i></a>
-                  </div>
                </div>
             </nav>
         </div>
@@ -156,7 +153,7 @@
     <div data-role="pane" data-transition="slide" class="xc-fill" data-id="pane">
 
         <!-- login-->
-        <div data-role="view" data-uri="login" data-title="Login" data-layout="login" data-background="red">
+        <div data-role="view" data-uri="login" data-title="Login" data-layout="login">
             <div id="login">
                 <div class="title">
                     <center><h2>
@@ -335,61 +332,66 @@
 
         <!-- form -->
         <div data-role="view" data-uri="form" data-title="Form" data-layout="form">
-            <div class="row">
-              <!--form input-->
-              <form class="span-12">
-                <div class="row input-field">
-                  <div class="span-6">
-                    <input id="first_name" type="text">
-                    <label for="first_name">First Name</label>
-                  </div>
-                  <div class="span-6">
-                    <input id="last_name" type="text">
-                    <label for="last_name">Last Name</label>
-                  </div>
+          <div class="row">
+            <!--form input-->
+            <form class="span-12">
+              <div class="row input-field">
+                <div class="span-6">
+                  <input id="first_name" type="text">
+                  <label for="first_name">First Name</label>
                 </div>
-                <div class="row">
-                  <div class="span-12 input-field">
-                    <input id="Username" type="text">
-                    <label for="Username">Username</label>
-                  </div>
+                <div class="span-6">
+                  <input id="last_name" type="text">
+                  <label for="last_name">Last Name</label>
                 </div>
-                <div class="row">
-                  <div class="span-12 input-field">
-                    <input id="password" type="password">
-                    <label for="password">Password</label>
-                  </div>
+              </div>
+              <div class="row">
+                <div class="span-12 input-field">
+                  <input id="Username" type="text">
+                  <label for="Username">Username</label>
                 </div>
-                <div class="row">
-                  <div class="input-field span-12">
-                    <textarea id="textarea1" class="textarea"></textarea>
-                    <label for="textarea1">Textarea</label>
-                  </div>
+              </div>
+              <div class="row">
+                <div class="span-12 input-field">
+                  <input id="password" type="password">
+                  <label for="password">Password</label>
                 </div>
-                <div class="row">
-                  <div class="span-12">
-                    <label>Materialize Select</label>
-                      <select>
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                      </select>
-                  </div>
+              </div>
+              <div class="row">
+                <div class="input-field span-12">
+                  <textarea id="textarea1" class="textarea"></textarea>
+                  <label for="textarea1">Textarea</label>
                 </div>
-              
-            <!--form input type radio-->
-                <div class="radio-button span-12">
-                    <input name="group1" type="radio" id="test1" />
-                    <label for="test1">Red</label>
+              </div>
+              <div class="row">
+                <div class="span-12">
+                  <label>Materialize Select</label>
+                    <select>
+                      <option value="" disabled selected>Choose your option</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
                 </div>
-                <div class="radio-button span-12">
-                    <input name="group1" type="radio" id="test2" />
-                    <label for="test2">Yellow</label>
-                </div>
-                <div class="radio-button span-12">
-                    <input class="with-gap" name="group1" type="radio" id="test3"  />
+              </div>
+            
+          <!--form input type radio-->
+              <div class="radio-button span-12">
+                  <input name="group1" type="radio" id="test1" />
+                  <label for="test1">Red</label>
+              </div>
+              <div class="radio-button span-12">
+                  <input name="group1" type="radio" id="test2" />
+                  <label for="test2">Yellow</label>
+              </div>
+              <div class="radio-button span-12">
+                <input class="with-gap" name="group1" type="radio" id="test3"  />
+              </div>
+            </form>
+          </div>
+        </div>
 
+        <!-- into page -->
         <div class="intro" data-role="view" data-uri="intro" data-title="intro" data-layout="intro">
            <div class="imgIntro">
                <img src="http://www.shivam.com.au/Content/images/img-internet-marketing.png" alt="" width="100%">
