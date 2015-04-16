@@ -15,13 +15,13 @@
 
     <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="vendor/xin-theme/style/style.css" />
 
     <!--    ##Start Development Stylesheet##
     <link rel="stylesheet" type="text/css" href="vendor/xin/css/xin.min.css" />
     <link rel="stylesheet" type="text/css" href="vendor/xin/css/xin-contrib.min.css" />
     <link rel="stylesheet" type="text/css" href="vendor/jacket-awesome/jacket-awesome.css" />
     <link rel="stylesheet" type="text/css" href="vendor/naked/css/naked.css" />
-    <link rel="stylesheet" type="text/css" href="vendor/xin-theme/style/style.css" />
             ##End Development Stylesheet## -->
 
 </head>
@@ -54,9 +54,9 @@
                          <input type="text"  placeholder="Search">
                      </form>
                   </div>
-                  <div class="span-2">
-                     <a href="#" class="icon-menu"><i class="xn xn-search"></i></a>
+                  <div class="span-2 ">
                      <a href="#" class="icon-menu pull-right"><i class="xn xn-ellipsis-v"></i></a>
+                     <a href="#" class="icon-menu pull-right"><i class="xn xn-search"></i></a>
                   </div>
                </div>
             </nav>
@@ -322,67 +322,89 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
 
         <!-- form -->
         <div data-role="view" data-uri="form" data-title="Form" data-layout="form">
           <div class="row">
             <!--form input-->
-            <form class="span-12">
-              <div class="row input-field">
-                <div class="span-6">
-                  <input id="first_name" type="text">
-                  <label for="first_name">First Name</label>
+            <form class="span-12 xinForm">
+                <div class="row input-field">
+                  <div class="span-6">
+                    <input id="first_name" type="text">
+                    <label for="first_name">First Name</label>
+                  </div>
+                  <div class="span-6">
+                    <input id="last_name" type="text">
+                    <label for="last_name">Last Name</label>
+                  </div>
                 </div>
-                <div class="span-6">
-                  <input id="last_name" type="text">
-                  <label for="last_name">Last Name</label>
+                <div class="row">
+                  <div class="span-12 input-field">
+                    <input id="username" type="text">
+                    <label for="username">Username</label>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="span-12 input-field">
-                  <input id="Username" type="text">
-                  <label for="Username">Username</label>
+                <div class="row">
+                  <div class="span-12 input-field">
+                    <input id="password" type="password">
+                    <label for="password">Password</label>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="span-12 input-field">
-                  <input id="password" type="password">
-                  <label for="password">Password</label>
+                <div class="row">
+                  <div class="input-field span-12">
+                    <textarea id="textarea1" class="textarea"></textarea>
+                    <label for="textarea1">Textarea</label>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="input-field span-12">
-                  <textarea id="textarea1" class="textarea"></textarea>
-                  <label for="textarea1">Textarea</label>
+                <div class="row">
+                  <div class="span-12">
+                    <label>Materialize Select</label>
+                      <select>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                      </select>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="span-12">
-                  <label>Materialize Select</label>
-                    <select>
-                      <option value="" disabled selected>Choose your option</option>
-                      <option value="1">Option 1</option>
-                      <option value="2">Option 2</option>
-                      <option value="3">Option 3</option>
-                    </select>
+                <div class="row">
+                    <div class="span-12">
+                        <label>Date</label>
+                        <input type="date" />
+                    </div>
                 </div>
-              </div>
-            
-          <!--form input type radio-->
-              <div class="radio-button span-12">
+                 
+              
+            <!--form input type radio-->
+                <div class="radio-button span-12">
                   <input name="group1" type="radio" id="test1" />
                   <label for="test1">Red</label>
-              </div>
-              <div class="radio-button span-12">
+                </div>
+                <div class="radio-button span-12">
                   <input name="group1" type="radio" id="test2" />
                   <label for="test2">Yellow</label>
-              </div>
-              <div class="radio-button span-12">
-                <input class="with-gap" name="group1" type="radio" id="test3"  />
-              </div>
+                </div>
+                <div class="radio-button span-12">
+                  <input class="with-gap" name="group1" type="radio" id="test3"  />
+                  <label for="test3">Green</label>
+                </div>
+                 <div class="radio-button span-12">
+                    <input name="group1" type="radio" id="test4" disabled="disabled" />
+                    <label for="test4">Brown</label>
+                </div>
+                
+                
+                <!--input type checkbox-->
+                <div class="input-checkbox span-12">
+                  <input type="checkbox" id="test5" />
+                  <label for="test5">Red</label>
+                </div>
+                <div class="input-checkbox span-12">
+                  <input type="checkbox" id="test6" checked="checked" />
+                  <label for="test6">Yellow</label>
+                </div>
+              </form>
             </form>
           </div>
         </div>
@@ -594,8 +616,8 @@
     <script type="text/javascript" src="dist/js/vendor.min.js"></script>
     <!-- ##End Production Javascript## -->
 
-    <!--    ##Start Development Javascript##
     <script type="text/javascript" src="vendor/jquery/dist/jquery.min.js"></script>
+    <!--    ##Start Development Javascript##
     <script type="text/javascript" src="vendor/underscore/underscore-min.js"></script>
     <script type="text/javascript" src="vendor/backbone/backbone-min.js"></script>
     <script type="text/javascript" src="vendor/xin/js/xin.js"></script>
@@ -611,6 +633,7 @@
     <script type="text/javascript" src="./js/app/config.js"></script>
     <script type="text/javascript" src="./js/app/routes.js"></script>
     <script type="text/javascript" src="./js/app/init.js"></script>
+    <script type="text/javascript" src="./vendor/xin-theme/js/main.js"></script>
 
 
 </body>
