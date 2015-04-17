@@ -10,7 +10,7 @@ body .xin-layout{display:none}
 .xin-region-footer .xin-navbar,.xin-region-footer .xin-tabstrip{border-bottom:0}
 .xin-list li{border-top:1px solid rgba(180,180,180,.5)}
 .xin-list li:first-child{border-top:0}
-.xin-list li a{padding:.5em .7em;display:block}
+.xin-list li a{display:block}
 .xin-drawer{position:fixed!important;-webkit-transition:all .3s;top:0;right:0;left:0;bottom:0;z-index:1}
 @media screen{input[type=date],input[type=datetime-local],input[type=datetime],input[type=email],input[type=month],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=time],input[type=url],input[type=week],select,span.field,textarea{box-sizing:border-box;display:block;margin:0;padding:.5em;height:2.3125em;width:100%;border:1px solid #ddd;outline:0;-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;font-weight:300;background:#fff}}
 .xc-fill-container{position:relative}
@@ -634,6 +634,7 @@ a.login{display:table;margin:0 auto}
 ul.listing .thumb-img{width:46px;height:46px;background-size:cover;background-repeat:no-repeat;float:left;background-position:center;border-radius:50%;margin-right:16px}
 ul.listing li{list-style:none;clear:both;padding:10px 0}
 ul.listing li .title{margin:0;font-size:1em;color:#333}
+.xin-list li a{padding:0}
 .progress{position:relative;height:4px;display:block;width:100%;background-color:#acece6;border-radius:2px;margin:.5rem 0 1rem;overflow:hidden}
 .progress .determinate{position:absolute;top:0;bottom:0;background-color:#26a69a;-webkit-transition:width .3s linear;-moz-transition:width .3s linear;-o-transition:width .3s linear;-ms-transition:width .3s linear;transition:width .3s linear}
 /*! naked.css v1.0.1 | MIT License | xinix.co.id */
